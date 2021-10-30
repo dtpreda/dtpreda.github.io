@@ -1,0 +1,56 @@
+body {
+    background-image: url("img/bg.jpg");
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card {
+    text-align: center;
+    background-color: rgba(0, 7, 32, 0.8);
+    padding: 10px;
+    margin: 5%;
+    border-radius: 10px;
+}
+
+.card p, .card h1, .card h2, .card li {
+    color: white;
+}
+
+.card a, .card:visited {
+    color: #749ebc;
+}
+
+.card h1 {
+    justify-content: center;
+}
+
+.card .gradient {
+    display: grid;
+    place-items: center;
+    width: 215px;
+    height: 215px;
+    margin:auto;
+    border-radius: 1000px;
+    background: radial-gradient(#749ebc 62%, 73%, transparent 88%);
+}
+
+.card .portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit:  cover;
+    object-position: 15% 50%;
+}
+
+.card .education-list, .card .personal-list, .card .hobby-list, .card .language-list {
+    align-items: center;
+    margin-top: -15px
+}
+
+.card ul li {
+    margin-left: -50px;
+    list-style: none;
+}
+
+.card .education-list li ul{
+    margin-bottom: 10px;
+}
