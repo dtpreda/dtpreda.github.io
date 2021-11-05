@@ -1,7 +1,15 @@
 body {
-    background-image: url("img/bg.jpg");
-    background-repeat: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bg {
+    position: absolute;
+    top:0;
+    left:0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-image: url("img/bg.jpg")
 }
 
 .card {
