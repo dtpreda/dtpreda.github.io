@@ -16,21 +16,9 @@ body {
     margin: 5%;
     border-radius: 10px;
     background-color:rgba(0, 7, 32, 0.8);
-    background-image: linear-gradient(transparent 45%, rgba(116, 158, 188, 0.2), transparent 55%);
     background-size: 200% 200%;
     background-position: 0% 100%;
-    animation: slide 6s infinite ease-in-out alternate;
 }
-
-@keyframes slide {
-    from {
-        background-position: 0% 100%;
-    }
-    to {
-        background-position: 0% 0%;
-    }
-}
-
 .card p, .card h1, .card h2, .card li {
     color: white;
 }
@@ -133,6 +121,7 @@ body {
 
 
 .footer {
+    padding: 5px;
     margin-top: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -150,7 +139,7 @@ body {
     margin-left: -50px;
 }
 
-.footer .social li {
+.footer .social a {
     background-position: center;
     width: 50%;
     margin: -10px 50px;
@@ -159,6 +148,10 @@ body {
     transition: background-color .2s ease-in-out;
 }
 
-.footer .social li:hover {
+.footer .social a:hover {
     background-color: rgba(0, 7, 32, 0.8);
+}
+
+.footer .social a li {
+    color: #749ebc;
 }
