@@ -34,7 +34,7 @@ body {
     height: 215px;
     margin:auto;
     border-radius: 1000px;
-    background: radial-gradient(#749ebc 50%, 73%, transparent 88%);
+    background-image: radial-gradient(#749ebc 50%, 73%, transparent 88%);
     animation: breathing 2s ease .1s infinite;
 }
 
