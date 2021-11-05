@@ -19,7 +19,7 @@ body {
     background-image: linear-gradient(transparent 45%, rgba(116, 158, 188, 0.2), transparent 55%);
     background-size: 200% 200%;
     background-position: 0% 100%;
-    animation: slide 2s infinite ease-in-out alternate;
+    animation: slide 6s infinite ease-in-out alternate;
 }
 
 @keyframes slide {
@@ -52,7 +52,7 @@ body {
     margin:auto;
     border-radius: 1000px;
     background-image: radial-gradient(#749ebc 50%, 73%, transparent 88%);
-    animation: breathing 2s ease infinite;
+    animation: breathing 3s ease infinite;
 }
 
 @keyframes breathing {
@@ -96,15 +96,23 @@ body {
 }
 
 .lang, .hob {
-    margin: 5px 0px 10px -20px;
     padding: 10px;
     text-align: left;
-    position:relative;
-    top: -14px;
+}
+
+.lang {
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.hob {
+    margin-bottom: -10px;
 }
 
 .langhob {
-    margin-bottom: -45px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
 }
 
 .education-list {
@@ -112,7 +120,8 @@ body {
 }
 
 .edu, .langhob {
-    width: 50%
+    width: 50%;
+    margin-bottom: -10px;
 }
 
 .edu {
@@ -120,8 +129,8 @@ body {
     position:relative;
     right: -10px;
     margin-left: -10px;
-    margin-bottom: -10px;
 }
+
 
 .footer {
     margin-top: 10px;
