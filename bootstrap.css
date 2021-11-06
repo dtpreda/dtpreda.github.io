@@ -1,0 +1,35 @@
+body {
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card {
+    text-align: center;
+    padding: 10px;
+    margin: 5%;
+    border-radius: 10px;
+    background-color:rgba(0, 7, 32, 0.8);
+    background-size: 200% 200%;
+    background-position: 0% 100%;
+}
+
+.card p, .card h1, .card h2, .card li {
+    color: white;
+}
+
+.card a, .card:visited {
+    color: #749ebc;
+    text-decoration: none;
+}
+
+.div-box {
+    background-color: rgba(116, 158, 188, 0.25);
+    border-radius: 10px;
+}
+
+.div {
+    padding: 10px;
+}
