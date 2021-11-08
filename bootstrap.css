@@ -4,32 +4,74 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
 }
 
-.card {
-    text-align: center;
-    padding: 10px;
-    margin: 5%;
-    border-radius: 10px;
-    background-color:rgba(0, 7, 32, 0.8);
-    background-size: 200% 200%;
-    background-position: 0% 100%;
+.nav {
+    display: flex;
+    flex-direction: row;
 }
 
-.card p, .card h1, .card h2, .card li {
+.nav p, .nav h1, .nav h2, .nav li {
     color: white;
 }
 
-.card a, .card:visited {
+.nav .header {
+    position:absolute;
+    height: 100%;
+    width: 10%;
+    overflow-y: hidden;
+    background-color: rgba(0, 7, 32, 0.90);
+    padding: 0;
+}
+
+.nav .header .links {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+.nav .header .links .logo {
+    font-size: 30px;
+    margin-bottom: 100%;
+}
+
+.nav .header .links .item {
+    margin: 10%;
+}
+
+.nav .header .links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav .header .links li a:hover {
+    color: #749ebc;
+}
+
+.bd {
+    position: fixed;
+    top: 0;
+    margin: 1%;
+    margin-left: 11%;
+    height: 97%;
+    width: 88%;
+    background-color: rgba(0, 7, 32, 0.7);
+    border-radius: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.bd a {
     color: #749ebc;
     text-decoration: none;
 }
 
-.div-box {
-    background-color: rgba(116, 158, 188, 0.25);
+.content {
     border-radius: 10px;
-}
-
-.div {
-    padding: 10px;
+    background-color: rgba(116, 158, 188, 0.3);
 }
