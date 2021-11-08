@@ -21,6 +21,7 @@
 
 .bd .intro .intro-txt p {
     font-size: 20px;
+    text-align: justify;
 }
 
 .bd .intro .intro-portrait {
