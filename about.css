@@ -1,0 +1,60 @@
+p, h1, h2, h3 {
+    padding-left: 1cm;
+    padding-right: 1cm;
+}
+
+.bd {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+}
+
+.bd .img {
+    width: 40%;
+    height: 97.9%;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.bd .portrait {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 30% 0%;
+    filter: brightness(90%);
+}
+
+.bd .presentation {
+    flex: 1;
+    margin-right: -10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    width: 100%;
+}
+
+.bd .hobbies-languages{
+    display: flex;
+}
+
+.bd .hobbies-languages .hobbies, .bd .hobbies-languages .languages {
+    width: 50%;
+    margin-top: 0;
+}
+
+.bd .hobbies-languages .hobbies {
+    margin-right: 5px;
+}
+
+.bd .hobbies-languages .languages {
+    margin-left: 5px;
+}
+
+.bd .quote-div {
+    margin-top: 0;
+}
+
+.bd .quote-div p .quote {
+    font-weight: bold;
+    font-style: italic;
+}
