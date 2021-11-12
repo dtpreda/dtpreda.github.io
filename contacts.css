@@ -28,17 +28,37 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 0 100%;
+    object-position: 50% 100%;
 }
 
 .bd .right .content {
     display: flex;
     width: 100%;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.bd .right .content {
+.bd .right .content .links {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     
+}
+
+.bd .right .content .links a {
+    height: 26%;
+    margin-top: 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.2s;
+    border-radius: 10px;
+}
+
+.bd .right .content .links a:hover {
+    background-color: rgba(0, 7, 32, 0.40);
 }
