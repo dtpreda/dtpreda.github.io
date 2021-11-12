@@ -7,6 +7,10 @@ body {
     margin: 0;
 }
 
+.preload {
+    transition: none !important;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
