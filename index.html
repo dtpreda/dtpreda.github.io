@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="bootstrap.css">
         <link rel="stylesheet" href="index.css">
     </head>
-    <body>
+    <body class="preload">
         <div class="nav">
             <div class="div header">
                 <ul class="links">
@@ -34,4 +34,9 @@
             </div>
         </div>
     </body>
+    <script>
+        $(window).load(function() {
+            $("body").removeClass("preload");
+        })
+    </script>
 </html>
