@@ -1,61 +1,44 @@
 .bd {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     overflow:scroll;
 }
 
-.bd .top {
+.bd .left, .bd .right {
     display: flex;
-    height: 40%;
-    width: 100%;
+    flex-wrap: nowrap;
+    height: 100%;
 }
 
-.bd .top .links {
+.bd .left {
+    width: 40%;
+}
+
+.bd .right {
+    width: 60%;
+}
+
+.bd .left .img {
+    overflow: hidden;
+    padding: 0;
     margin-right: 0;
 }
 
-.bd .top .content {
-    width: 50%;
+.bd .left .img .altice {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 100%;
 }
 
-.bd .top .img {
-    overflow: hidden;
+.bd .right .content {
     display: flex;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
 }
 
-.bd .top .img .portrait {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 30% 40%;
-}
-
-.bd .middle {
-    display: flex;
-    margin-top: -10px;
-}
-
-.bd .middle .content {
-    width: 50%;
-}
-
-.bd .middle .img {
-    overflow: hidden;
-    padding: 0;
-}
-
-.bd .middle .img .altice {
-    position: relative;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    object-position: 40% 50%;
-}
-
-.bd .middle .links {
-    position: relative;
-    margin-right: 0;
+.bd .right .content {
+    
 }
