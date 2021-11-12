@@ -2,10 +2,6 @@
     display: flex;
 }
 
-.preload {
-    transition: none !important;
-}
-
 .bd .intro .intro-txt, .bd .intro .intro-portrait {
     margin: 10px;
     padding: 5px;
