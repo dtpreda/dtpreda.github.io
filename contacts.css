@@ -48,7 +48,7 @@
     
 }
 
-.bd .right .content .links a {
+.bd .right .content .links a{
     height: 26%;
     margin-top: 1%;
     width: 100%;
@@ -58,6 +58,10 @@
     text-align: center;
     transition: background-color 0.2s;
     border-radius: 10px;
+}
+
+.bd .right .content .links .bi {
+    font-size: 30px;
 }
 
 .bd .right .content .links a:hover {
