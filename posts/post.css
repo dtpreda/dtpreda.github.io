@@ -4,3 +4,8 @@
     width: 100%;
 }
 
+.bd {
+    display: flex;
+    flex-direction: column;
+}
+

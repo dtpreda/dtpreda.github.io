@@ -20,6 +20,8 @@ async function text_load(path) {
                     add_content(text[2*i], text[2*i + 1], intro);
                 }
 
+                intro.style.flexGrow = "0";
+
                 children.push(intro);
             } else if (text[2*i] == "--start content") {
                 var content = document.createElement("div");
@@ -29,6 +31,8 @@ async function text_load(path) {
                     i++;
                     add_content(text[2*i], text[2*i + 1], content);
                 }
+
+                content.style.flexGrow = "0";
 
                 children.push(content);
             } else if (text[2*i] == "--start split") {
@@ -52,6 +56,8 @@ async function text_load(path) {
                     }
                 }
 
+                split.style.flexGrow = "0";
+
                 split.style.marginTop = "-10px";
                 
                 var p = 100 / n;
@@ -64,6 +70,20 @@ async function text_load(path) {
                 }
                 
                 children.push(split);
+            } else if (text[2*i] == "--start body") {
+                var body = document.createElement("div");
+                body.classList.add("content");
+
+                while (text[2*i] != "--end body") {
+                    i++;
+                    add_content(text[2*i], text[2*i + 1], body);
+                }
+
+                body.style.marginTop = "0";
+
+                body.style.flexGrow = "1";
+
+                children.push(body);
             }
         }
 
