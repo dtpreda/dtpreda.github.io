@@ -1,0 +1,78 @@
+--title
+Getting around static webpages
+--desc
+A brief description on how I'm automating post creation
+--start intro
+@@@void@@@
+--h1
+Getting around static webpages
+--text
+Anyone who uses Github Pages should be familiar with the fact that the platform does not allow the hosting of dynamic webpages.
+--text
+In order to avoid manually writing every single post in my personal blog, I've developed a small set of functions that allow me to load content from text file and insert it into a template HTML file.
+--text
+Read further to find out how I did this.
+--end intro
+@@@void@@@
+--start split
+@@@void@@@
+--start
+@@@void@@@
+--text
+A small notice: I'm fully aware that I could use something like Jekyll to automatically do this for me. However, I decided to spend some time trying to do this on my own. Judge me at your will :)
+--end
+@@@void@@@
+--end split
+@@@void@@@
+--start split
+@@@void@@@
+--start
+@@@void@@@
+--text
+My simple and naive getaround encodes the basic information that I want to display on a formatted text file.
+--text
+It is currently comprised of grouping tags such as <strong>intro</strong>, <strong>split</strong> and <strong>body</strong> and several element tags, such as <strong>text</strong>, <strong>img</strong> and <strong>h1</strong>.
+--text
+For example, the sequence of lines:<br><code>--h1</code><br><code>Example H1</code><br><code>--text</code><br><code>Hello! I am some example text!</code>
+--text
+Produces the example at the right.
+--end
+@@@void@@@
+--start
+@@@void@@@
+--h1
+Example H1
+--text
+Hello! I am some example text!
+--end
+@@@void@@@
+--end split
+@@@void@@@
+--start body
+@@@void@@@
+--text
+Although this still a very limitating framework, it allows me to build posts in a more dinamic way than writing the HTML from the ground up.
+--text
+Another advantage is that, given that I don't parse my input (I trust myself :D), I allow myself to inject HTML into the original file.
+--text
+Let me show how I would build a simple split tag like the one above with HTML injection in it:<br><code>--start body</code><br><code>@@@void@@@</code><br><code>--text</code><br><code>&lt;hr&gt;</code><br><code>--text</code><br><code>&lt;p style="text-align: center;"&gt;Example&lt;/p&gt;</code><br><code>--text</code><br><code>&lt;hr&gt;</code><br><code>--end body</code><br><code>@@@void@@@</code>
+--text
+This code snippet, when processed, produces the div below. The <strong>@@@void@@@</strong> are simply placeholders to uniform the <strong>tag \n value</strong> relation. Notice that I can even force CSS rules onto the dynamically created elements.
+--end body
+@@@void@@@
+--start body
+@@@void@@@
+--text
+<hr>
+--text
+<p style="text-align:center;">Example</p>
+--text
+<hr>
+--end body
+@@@void@@@
+--start body
+@@@void@@@
+--text
+Although this is a very rudimentar tool, I'm quite pleased with its functionality as it will enable me to finally upload some posts here. Thanks for reading!
+--end body
+@@@void@@@
