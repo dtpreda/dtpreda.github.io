@@ -1,7 +1,9 @@
 --title
 Getting around static webpages
---desc
-A brief description on how I'm automating post creation
+--description
+A brief description on how I'm automating post creation. Also my first post! &#129395;
+--head
+/post/img/around-static1.png
 --start intro
 @@@void@@@
 --h1

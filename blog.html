@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="blog.css">
 </head>
 
-<body class="preload">
+<body class="preload" id="body">
     <div class="nav">
         <div class="div header">
             <ul class="links">
@@ -26,14 +26,17 @@
                     about.</p>
                 <p class="intro-txt">Updates will come from time to time!</p>
             </div>
-            <div class="posts"></div>
+            <div class="posts">
+                <div id="first" class="group"></div>
+                <div id="second" class="group"></div>
+                <div id="third" class="group"></div>
+                <div id="fourth" class="group"></div>
+            </div>
         </div>
     </div>
 </body>
-<script>
-    $(window).load(function () {
-        $("body").removeClass("preload");
-    })
-</script>
+
+<script type="text/javascript" src="blog.js"></script>
+<script>window.onload = add_posts();</script>
 
 </html>
