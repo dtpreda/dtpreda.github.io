@@ -22,8 +22,8 @@ async function get_file(path) {
 };
 
 function add_content(type, content, parent) {
-    if (type == "--h1") {
-        var h1 = document.createElement("h1");
+    if (type == "--h2") {
+        var h1 = document.createElement("h2");
         
         h1.innerHTML = content;
         parent.appendChild(h1);
@@ -58,7 +58,7 @@ async function add_post_to(post, link, parent) {
     }
 
     if (text[0] == "--title") {
-        add_content("--h1", text[1], div);
+        add_content("--h2", text[1], div);
     }
 
     if (text[2] == "--description") {
