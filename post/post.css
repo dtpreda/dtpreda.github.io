@@ -21,8 +21,16 @@
     object-position: 50% 100%;
 }
 
+.block-img {
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
 .content {
     padding-top: 0;
     padding-bottom: 0;
+    text-align: justify;
 }
 
