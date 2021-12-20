@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>David Preda's Blog</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="bootstrap.css">
-        <link rel="stylesheet" href="blog.css">
-    </head>
-    <body class="preload">
-        <div class="nav">
-            <div class="div header">
-                <ul class="links">
-                    <li class="logo"><a href="./index.html">DP</a></li>
-                    <li class="item"><a href="./about.html">About Me</a></li>
-                    <li class="item"><a href="./contacts.html">Contacts</a></li>
-                    <li class="item"><a href="./blog.html">Blog</a></li>
-                    <li class="item"><a href="#">Projects</a></li>
-                </ul>
-            </div>
-        
-            <div class="div bd">
-                <div class="content">
-                    <h1>Personal Blog</h1>
-                    <p class="intro-txt">Here you will find some random posts about some of the things that I'm passionate about.</p>
-                    <p class="intro-txt">Updates will come from time to time!</p>
-                </div>
-                <div class="content posts"></div>
-            </div>
+
+<head>
+    <title>David Preda's Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body class="preload">
+    <div class="nav">
+        <div class="div header">
+            <ul class="links">
+                <li class="logo"><a href="./index.html">DP</a></li>
+                <li class="item"><a href="./about.html">About Me</a></li>
+                <li class="item"><a href="./contacts.html">Contacts</a></li>
+                <li class="item"><a href="./blog.html">Blog</a></li>
+            </ul>
         </div>
-    </body>
-    <script>
-        $(window).load(function() {
-            $("body").removeClass("preload");
-        })
-    </script>
+
+        <div class="div bd">
+            <div class="content">
+                <h1>Personal Blog</h1>
+                <p class="intro-txt">Here you will find some random posts about some of the things that I'm passionate
+                    about.</p>
+                <p class="intro-txt">Updates will come from time to time!</p>
+            </div>
+            <div class="posts"></div>
+        </div>
+    </div>
+</body>
+<script>
+    $(window).load(function () {
+        $("body").removeClass("preload");
+    })
+</script>
+
 </html>
