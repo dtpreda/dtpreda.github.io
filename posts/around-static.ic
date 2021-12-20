@@ -55,7 +55,7 @@ Although this still a very limitating framework, it allows me to build posts in 
 --text
 Another advantage is that, given that I don't parse my input (I trust myself :D), I allow myself to inject HTML into the original file.
 --text
-Let me show how I would build a simple body tag like the one above with HTML injection in it:<br><code>--start body</code><br><code>@@@void@@@</code><br><code>--text</code><br><code>&lt;hr&gt;</code><br><code>--text</code><br><code>&lt;p style="text-align: center;"&gt;Example&lt;/p&gt;</code><br><code>--text</code><br><code>&lt;hr&gt;</code><br><code>--end body</code><br><code>@@@void@@@</code>
+Let me show how I would build a simple body tag with HTML injection in it:<br><code>--start body</code><br><code>@@@void@@@</code><br><code>--text</code><br><code>&lt;hr&gt;</code><br><code>--text</code><br><code>&lt;p style="text-align: center;"&gt;Example&lt;/p&gt;</code><br><code>--text</code><br><code>&lt;hr&gt;</code><br><code>--end body</code><br><code>@@@void@@@</code>
 --text
 This code snippet, when processed, produces the div below. The <strong>@@@void@@@</strong> are simply placeholders to uniform the <strong>tag \n value</strong> relation. Notice that I can even force CSS rules onto the dynamically created elements.
 --end body
