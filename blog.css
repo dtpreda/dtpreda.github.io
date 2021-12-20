@@ -20,18 +20,38 @@
     margin-right: 5px;
 }
 
+.a {
+    width: 100%;
+    height: auto;
+}
+
 .post {
     text-align: center;
     margin-top:0;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 10px;
-    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    height: auto;
 }
 
 .head {
     position: relative;
-    top: -10px;
-    left: -10px;
-    width: 110%;
+    width: 100%;
+}
+
+.post p, .post h2 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.post p {
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.post h2 {
+    margin-top: 5px;
+    margin-bottom: 0;
 }
