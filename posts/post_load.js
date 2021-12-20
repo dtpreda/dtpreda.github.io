@@ -35,7 +35,9 @@ async function text_load(path) {
                 content.style.flexGrow = "0";
 
                 children.push(content);
-            } else if (text[2*i] == "--start split") {
+            } else if (text[2 * i] == "--start split") {
+                var max_height = "";
+
                 var split =document.createElement("div");
                 split.classList.add("split");
                 
@@ -53,6 +55,31 @@ async function text_load(path) {
                             add_content(text[2*i], text[2*i + 1], div);
                         }
                         split.appendChild(div);
+
+                    } if (text[2 * i] == "--start img") {
+                        i++;
+
+                        if (text[2 * i] == "--img") {
+                            n++;
+                            var div = document.createElement("div");
+                            div.classList.add("content");
+                            div.classList.add("img-div");
+                            
+                            var img = document.createElement("img");
+                            img.src = text[2 * i + 1];
+                            img.classList.add("img");
+
+                            i++;
+                            if (text[2 * i] == "--height") {
+                                max_height = text[2 * i + 1] + "px";
+                                div.appendChild(img);
+                                split.appendChild(div);
+                            }
+                            
+                        }
+
+                        i++;
+
                     }
                 }
 
@@ -64,6 +91,9 @@ async function text_load(path) {
                 for (var j = 0; j < split.children.length; j++) {
                     var child = split.children[j];
                     child.style.width = p.toString() + "%";
+                    if (max_height != "") {
+                        child.style.height = max_height;
+                    }
                     if (j > 0) {
                         child.style.marginLeft = "0";
                     }

@@ -9,3 +9,20 @@
     flex-direction: column;
 }
 
+.bd .img-div {
+    overflow: hidden;
+    padding: 0;
+}
+
+.bd .img-div .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+}
+
+.content {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
